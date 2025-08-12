@@ -61,6 +61,54 @@ void mergeSort(int arr[], int left, int right){
         merge(arr, left, mid, right);
     }
 }
+/*  int arr[] = {7,4,2,3,1,5,8,6};
+    int left = 0;
+    int right = 7;
+    0 < 7; mid = 7/2 + 0 = 3;
+    mergeSort(arr[], 0, 3)
+    {
+        0 < 3; mid = 3/2 + 0 = 1;
+        mergeSort(arr[], 0, 1){
+            0 < 1; mid = 0;
+            mergeSort(arr[], 0, 0){}
+            mergeSort(arr[], 2, 1){}
+            merge(arr[] {7,4,2,3,1,5,8,6}, 0, 0, 1){
+                n1 = 0 - 0 + 1 = 1;
+                n2 = 1 - 0 = 1;
+                L[0] = arr[0] = 7;
+                R[0] = arr[1] = 4;
+                after loop: {4,7,2,3,1,5,8,6};
+            }
+        }
+        mergeSort(arr[], 2, 3){
+            2 < 3; mid = 1/2 + 2 = 2;
+            mergeSort(arr[], 2, 2){}
+            mergeSort(arr[], 3, 3){}
+            merge(arr[] {4,7,2,3,1,5,8,6}, 2, 2, 3){
+                n1 = 1; n2 = 1;
+                L[0] = arr[2] = 2;
+                R[0] = arr[3] = 3;
+                after loop: {4,7,2,3,1,5,8,6};
+            }
+        }
+        merge(arr[] {4,7,2,3,1,5,8,6}, 0, 1, 3){
+            n1 = 2; n2 = 2;
+            L[0] = arr[0] = 4;
+            L[1] = arr[1] = 7;
+            R[0] = arr[2] = 2;
+            R[1] = arr[3] = 3;
+            after loop: {2,3,4,7,1,5,8,6};
+        }
+    }
+    mergeSort(arr[], 4, 7)
+    {
+        ...
+    }
+
+
+
+    
+*/
 
 
 
